@@ -22,7 +22,7 @@ output = input; % Default
            case 'selection'
                 for i = 1: length(input)-1
                     k = i; % search minimum location
-                    % serach minimum
+                    % search minimum
                     for j=i+1:length(input)
 
                         if(input(k)>input(j))
@@ -30,7 +30,7 @@ output = input; % Default
                         end
                     end
 
-                    % change position
+                    % swap position
                     a = input(i);
                     input(i) = input(k);
                     input(k) = a;
@@ -84,7 +84,7 @@ output = input; % Default
            case 'selection'
                 for i = 1: length(input)-1
                     k = i; % search minimum location
-                    % serach minimum
+                    % search minimum
                     for j=i+1:length(input)
 
                         if(input(k)<input(j))
@@ -92,7 +92,7 @@ output = input; % Default
                         end
                     end
 
-                    % change position
+                    % swap position
                     a = input(i);
                     input(i) = input(k);
                     input(k) = a;
